@@ -1,0 +1,46 @@
+---
+title: "kbmtl_semisupervised_classification_variational"
+author: "Janice Patterson, Mehmet Gonen"
+date: "`r Sys.Date()`"
+package: "`r packageVersion('kbmtl')`"
+output:
+  rmarkdown::html_document:
+    highlight: pygments
+    toc: true
+    toc_float: true
+    fig_width: 5
+bibliography: library.bib
+---
+
+##Introduction
+
+Workflow for Kernalized Semisupervised Classification Variational Method. 
+
+>According to Gönen, Mehmet & Margolin, Adam A. 2014.Drug susceptibility prediction against a panel of drugs using kernelized Bayesian multitask learning. Bioinformatics >(Oxford, England) 30 (17): i556-563. doi:10.1093/bioinformatics/btu464.
+
+
+
+##Breast cancer cell line pre-processing
+
+1) merge common cell lines between prediction and rnaseq
+2) filter for protein coding genes only with targetid
+3) log2 of training rnaseq
+4) scale trainnig rnaseq
+5) remove response with greater 0.95 and less than 0.05 frequences in both sens/resistant
+6) expression genes with more than 0 expression in 1 sample, remove NAs
+7) filter for trusight genes
+
+
+```{r}
+
+
+```
+
+
+```{r training}
+save(state, file =  "smmart_trained_machine_learning_model.RData")
+Y_predicted <- as.data.frame(prediction$P)
+  colnames(Y_predicted) <- colnames(Y_train)
+  return(Y_predicted, prediction)
+```
+
