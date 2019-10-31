@@ -1,4 +1,4 @@
-This package contains R Bioconductor implementation of the algorithms in: 
+This package contains the proposed R Bioconductor implementation of the algorithms in: 
 
 |	Gönen, Mehmet and Margolin, Adam A. 2014. Drug susceptibility prediction against a panel 
 |	of drugs using kernelized Bayesian multitask learning. Bioinformatics, 30(17):i556-563, 2014
