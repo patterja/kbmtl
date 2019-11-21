@@ -1,10 +1,15 @@
-#' Testing function for classification on cell lines with prediction and expression
-#' @param X_train (matrix) matrix of expression
-#' @param X_test (matrix) matrix
-#' @param Y_train (matrix) matrix of response binary (0,1)
-#' @param state (vector)
-#' @return prediction
+#' DrugPrediction TRAINING
+#' 
+#' @param path_to_bccl (string): Path to BCCL normCPMRUV_BCCL.tsv
+#' @param path_to_test (string): Path to Test matrix 
+#' @param path_to_combined (string): path to combined training and test matrix
+#' @param train_idx (numeric): numeric list of index of training data sets in path_to_combined
+#' @param cell_line_response (string): cell_line_response_threshold_0.50_large_and_small_screen.RData
+#' @param path_to_targetid (string): path to target_id.txt. Used to filter protein_coding genes only. 
+#' @param path_to_trusight (string): path to gene list Trusight.csv. Used to filter genes associated with cancer
+#' @return smmart_trained_machine_learning_model.RData
 #' @export
+#'
 #' @author Janice Patterson
 #' @examples Y_predicted = cellline_test(Xtrain, X_test, Ytrain, state) 
 
