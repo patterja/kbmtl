@@ -54,6 +54,7 @@ Y_train <- Y_train[,which(frequencies > 0.05 & frequencies < 0.95)]
 # FILTER protein coding: filter for protein coding genes
 if (is.null(targetid)){
   print("Not filtering for protein coding genes.")
+  ttrain_expression = t(train_expression)
   } else{
   ttrain_expression = convert2hugo(t(train_expression), targetid_file = targetid)
   print("Filtering for protein coding genes and converting to HUGO names")}
@@ -62,6 +63,7 @@ if (is.null(targetid)){
 # FILTER trusight genes: filter gene lis of known cancer types
 if (is.null(genelist)){
   print("Not filtering by gene list. Specify list of cancer related genes to train on.")
+  ttrain_expression = ttrain_expression
   } else {
   trusight_genes <- read.csv(genelist, header = FALSE, stringsAsFactors = FALSE)[,1]
   ltru = intersect(trusight_genes, rownames(ttrain_expression))

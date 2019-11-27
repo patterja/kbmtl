@@ -7,3 +7,8 @@ This package contains the proposed R Bioconductor implementation of the algorith
 * demo_classification.R file shows how to use the classification algorithm in R.
 * demo_regression.R file shows how to use the regression algorithm in R.
 
+##Installation
+```
+library(devtools)
+install("kbmtl")
+```
