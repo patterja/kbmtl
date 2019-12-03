@@ -20,9 +20,6 @@ vector of matrix and vector
 kbmtl_semisupervised_regression_variational_test
 testing procedure for regression
 }
-\examples{
-kbmtl_semisupervised_regression_variational_test(K_test,state)
-}
 \author{
 Mehmet Gonen
 }

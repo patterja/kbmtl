@@ -1,0 +1,17 @@
+citHeader("To cite package 'kbmtl' in publications use:")
+
+citEntry(entry="article",
+    title = "Drug susceptibility prediction against a panel of drugs using
+kernelized Bayesian multitask learning", 
+    author = personList(as.person("Mehmet GÃ¶nen"),
+                        as.person("Adam A. Margolin")),
+  language = "eng",
+  number = "17",
+  journal = "Bioinformatics (Oxford, England)",
+  year = 2014,
+  pmid = 25161247,
+  pmcid = "PMC4147917",
+  pages = "i556--563",
+  volume = "30",
+  issn = "1367-4811")
+

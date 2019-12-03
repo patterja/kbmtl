@@ -6,7 +6,6 @@
 #' @return state
 #' @export
 #' @author Mehmet Gonen
-#' @examples state <-kbmtl_semisupervised_classification_variational_train(K_train, Y_train,parameters)
 
 kbmtl_semisupervised_classification_variational_train <- function(K, Y, parameters) {
   set.seed(parameters$seed)

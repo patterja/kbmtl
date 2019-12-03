@@ -5,7 +5,6 @@
 #' @return vector of matrix and vector
 #' @export
 #' @author Mehmet Gonen
-#' @examples kbmtl_semisupervised_regression_variational_test(K_test,state)
 
 kbmtl_semisupervised_regression_variational_test <- function(K, state) {
   N <- dim(K)[2]

@@ -10,13 +10,7 @@
 
 
 
-train_classification <- function(path_to_combined, 
-                          train_idx, 
-                          cell_line_response,
-                          path_to_targetid, 
-                          path_to_trusight, 
-                          normalization_type="CPMRUV", 
-                          classification_type="trusight") {
+train_classification <- function(Xtrain, Ytrain) {
   #parse optional arguments 
   
   
@@ -35,6 +29,7 @@ train_classification <- function(path_to_combined,
   parameters$sigma_w <- 1.0
   
   state <- kbmtl_semisupervised_classification_variational_train(K_train, Y_train, parameters)
+  
   save(state, file =  "smmart_trained_machine_learning_model.RData")
   print(paste0("kbmtl trained model saved ", getwd(), "/smmart_trained_machine_learning_model.RData"))
   return(state)

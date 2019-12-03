@@ -21,9 +21,6 @@ aggregated matrix with HUGO IDs
 RNA matrix of ENSG identifiers converted and aggregated (summed) to HUGO
 identifiers using targetid file from GENCODE v24.
 }
-\examples{
-convert2hugo(mat)
-}
 \author{
 Janice Patterson
 }

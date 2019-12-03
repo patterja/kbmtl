@@ -8,7 +8,6 @@
 #' @return aggregated matrix with HUGO IDs
 #' @export
 #' @author Janice Patterson
-#' @examples convert2hugo(mat)
 
 convert2hugo <- function(mat, targetid_file="target_id.txt", protein_coding=TRUE){
   targetid = read.csv(targetid_file, sep="\t", stringsAsFactors = F)

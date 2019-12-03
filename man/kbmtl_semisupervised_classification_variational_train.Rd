@@ -20,9 +20,6 @@ state
 \description{
 kbmtl_semisupervised_classification_variational_train
 }
-\examples{
-state <-kbmtl_semisupervised_classification_variational_train(K_train, Y_train,parameters)
-}
 \author{
 Mehmet Gonen
 }

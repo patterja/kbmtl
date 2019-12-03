@@ -9,7 +9,6 @@
 #' @export
 #'
 #' @author Janice Patterson
-#' @examples Y_predicted = cellline_test(Xtrain, X_test, Ytrain, state) 
 
 cellline_test <- function(Xtrain, X_test, Ytrain, state)
 {
