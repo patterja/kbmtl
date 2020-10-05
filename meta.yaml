@@ -1,0 +1,22 @@
+# Conda metadata description
+
+package:
+  name: kbmtl
+  version: "0.1.0"
+
+source:
+  git_url: https://github.com/patterja/kbmtl
+
+requirements:
+  build:
+    - r
+
+  run:
+    - r
+
+test:
+  commands:
+
+about:
+  home: https://github.com/patterja/kbmtl
+  summary: Kernalized Baysian Multi-task Transfer Learning from breast cancer cell lines

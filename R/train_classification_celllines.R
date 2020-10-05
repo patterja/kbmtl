@@ -56,7 +56,7 @@ if (is.null(targetid)){
   print("Not filtering for protein coding genes.")
   ttrain_expression = t(train_expression)
   } else{
-  ttrain_expression = convert2hugo(t(train_expression), targetid_file = targetid)
+  ttrain_expression = convert2hugo(t(train_expression), protein_coding=TRUE, targetid_file = targetid)
   print("Filtering for protein coding genes and converting to HUGO names")}
 
 
